@@ -1,1 +1,1 @@
-print((lambda m:''.join([[c,chr(ord(c)-13)]['m'<c.lower()<'z'],chr(ord(c)+13)]['a'<=c.lower()<='n']for c in m))("VybirClgu0a"))
+print((lambda m:''.join([[c,chr(ord(c)-13)]['n'<=c.lower()<'z'],chr(ord(c)+13)]['a'<=c.lower()<='m']for c in m))("VybirClgu0a"))
