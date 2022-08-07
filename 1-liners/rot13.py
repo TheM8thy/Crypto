@@ -1,4 +1,4 @@
-def s(m):
+def r(m):
     r=""
     for c in m:
         if 'a'<=c.lower()<='m':
@@ -9,6 +9,6 @@ def s(m):
             r+=c
     return r
 
-print(s("VybirClgu0a"))
+print(r("VybirClgu0a"))
 
 print((lambda m:''.join([[c,chr(ord(c)-13)]['n'<=c.lower()<='z'],chr(ord(c)+13)]['a'<=c.lower()<='m'] for c in m))("VybirClgu0a"))
