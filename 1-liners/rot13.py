@@ -9,6 +9,6 @@ def r(m):
             r+=c
     return r
 
-print(r("VybirClgu0a"))
+print("start:"+r("VybirClgu0a")+":end")
 
 print((lambda m:''.join([[c,chr(ord(c)-13)]['n'<=c.lower()<='z'],chr(ord(c)+13)]['a'<=c.lower()<='m'] for c in m))("VybirClgu0a"))
