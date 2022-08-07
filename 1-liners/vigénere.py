@@ -1,5 +1,5 @@
-m = "nnnn"
-k = "nnnn"
+m = "a"
+k = "a"
 r = ""
 a=0
 k*=int(len(m) / len(k)) + (len(m) % len(k) > 0)
@@ -20,4 +20,4 @@ for i,c in enumerate(m):
 		r+=c
 print("start:"+r+":end")
 
-print((lambda k,m:'start:'+''.join([[c,chr((ord('a'))-1+(ord(k[i])-ord('a'))-(ord('z')-ord(c.lower())))][ord(c.lower())-ord('a') >= ord(k[i])-ord('a')],chr(ord(c.lower())+ord(k[i])-ord('a'))][ord('z')-ord(c.lower()) >= ord(k[i].lower())-ord('a')] for i,c in enumerate(m))+':end'('haha','aaaa'))
+print((lambda k,m:'start:'+''.join([[c,chr((ord('a'))-1+(ord(k[i])-ord('a'))-(ord('z')-ord(c.lower())))][ord(c.lower())-ord('a') >= ord(k[i])-ord('a')],chr(ord(c.lower())+ord(k[i])-ord('a'))][ord('z')-ord(c.lower()) >= ord(k[i].lower())-ord('a')] for i,c in enumerate(m))+(':end'))('haha','aaaa'))
