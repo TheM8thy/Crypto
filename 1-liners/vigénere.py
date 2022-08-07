@@ -16,7 +16,7 @@ def v(k,m):
 		else: #dont shift
 			r+=c
 	return r
-	
+
 print("start:"+v("n","444")+":end")
 
 print((lambda k,m:'start:'+''.join([c,[[c,chr((ord('a'))-1+(ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i])-ord('a'))-(ord('z')-ord(c.lower())))][ord(c.lower())-ord('a') >= ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i])-ord('a')],chr(ord(c.lower())+ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i])-ord('a'))][ord('z')-ord(c.lower()) >= ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i].lower())-ord('a')]][ord('A')<=ord(c)<=ord('Z') or ord('a')<=ord(c)<=ord('z')] for i,c in enumerate(m))+(':end'))('abc','444'))
