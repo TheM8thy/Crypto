@@ -1,6 +1,3 @@
-m = "444"
-k = "n"
-
 def v(k,m):
 	r=""
 	k*=int(len(m) / len(k)) + (len(m) % len(k) > 0)
