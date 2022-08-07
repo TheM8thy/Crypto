@@ -1,5 +1,3 @@
-print((lambda m:''.join([[c,chr(ord(c)-13)]['n'<=c.lower()<='z'],chr(ord(c)+13)]['a'<=c.lower()<='m'] for c in m))("VybirClgu0a"))
-
 def s(m):
     r=""
     for c in m:
@@ -12,3 +10,5 @@ def s(m):
     return r
 
 print(s("VybirClgu0a"))
+
+print((lambda m:''.join([[c,chr(ord(c)-13)]['n'<=c.lower()<='z'],chr(ord(c)+13)]['a'<=c.lower()<='m'] for c in m))("VybirClgu0a"))
