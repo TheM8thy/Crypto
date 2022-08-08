@@ -1,4 +1,4 @@
-def p(matrix,m):
+def p_enc(matrix,m):
 	r=''
 	for c in m:
 	    for row in matrix:
