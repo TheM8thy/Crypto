@@ -2,15 +2,17 @@ def v_enc(k,m):
 	r=""
 	k*=int(len(m) / len(k)) + (len(m) % len(k) > 0)
 	for i,c in enumerate(m):
-		if ord('A')<=ord(c)<=ord('Z') or ord('a')<=ord(c)<=ord('z'):
+		if 'A'<=c<='Z' or 'a'<=c<='z':
 			if ord('z')-ord(c.lower()) >= ord(k[i].lower())-ord('a'): #shift forward
 				r+=chr(ord(c.lower())+ord(k[i])-ord('a'))
-			elif ord(c.lower())-ord('a') >= ord(k[i])-ord('a'): #shift backward
+			else: #shift backward
+				#r+=chr((((ord(c)-ord('a'))+(ord(k[i])-ord('a')))%26)+ord('a')) alternative
 				r+=chr((ord('a'))-1+(ord(k[i])-ord('a'))-(ord('z')-ord(c.lower())))
 		else: #dont shift
-			r+=c
+			r+=c 
 	return r
 
-print("start:"+v_enc("n","444")+":end")
+print("start:"+v_enc("xyqxzplikywopr","lmuuimmujopj")+":end")
 
-print((lambda k,m:'start:'+''.join([c,[[c,chr((ord('a'))-1+(ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i])-ord('a'))-(ord('z')-ord(c.lower())))][ord(c.lower())-ord('a') >= ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i])-ord('a')],chr(ord(c.lower())+ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i])-ord('a'))][ord('z')-ord(c.lower()) >= ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i].lower())-ord('a')]][ord('A')<=ord(c)<=ord('Z') or ord('a')<=ord(c)<=ord('z')] for i,c in enumerate(m))+(':end'))('abc','444'))
+#encrypt
+print((lambda k,m:'start:'+''.join([c,[chr((ord('a'))-1+(ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i])-ord('a'))-(ord('z')-ord(c.lower()))),chr(ord(c.lower())+ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i])-ord('a'))][ord('z')-ord(c.lower()) >= ord((k*(int(len(m) / len(k)) + (len(m) % len(k) > 0)))[i].lower())-ord('a')]]['A'<=c<='Z' or 'a'<=c<='z'] for i,c in enumerate(m))+':end')('xyqxzplikywopr','lmuuimmujopj'))
