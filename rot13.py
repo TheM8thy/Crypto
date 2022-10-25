@@ -11,4 +11,4 @@ def r(m):
 
 print("start:"+r("VybirClgu0a")+":end")
 
-print((lambda m:'start:'+''.join([[c,chr(ord(c)-13)]['n'<=c.lower()<='z'],chr(ord(c)+13)]['a'<=c.lower()<='m'] for c in m)+':end')("bqiecqeopfkwoijsojSKJDBAkidc"))
+print((lambda m:'start:'+''.join([[c,chr(ord(c)-13)]['n'<=c.lower()<='z'],chr(ord(c)+13)]['a'<=c.lower()<='m'] for c in m)+':end')("VybirClgu0a"))
